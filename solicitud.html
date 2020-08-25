@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Inversiones Gamarti</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="\"><img src="img/logo.png" alt=""></a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><span
+                class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="prestamos.html">Prestamos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="calculadora.html">Calculadora de prestamos</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="solicitud.html">Solicitud de prestamos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <img src="img/prestamos-bg.jpg" alt="">
+        <div class="padding-cero">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Solicitud de prestamos</li>
+            </ol>
+        </div>
+    </header>
+
+    <section class="form-prestasmos mt-5 mb-5">
+        <div class="container">
+            <h4 class="mt-5 mb-5">Completa el formulario para solicitar un prestamo y nos pondremos en contacto contigo
+            </h4>
+            <form id="contact_us_submit">
+                <div class="form-group">
+                    <div class="form-row">
+                        <div class="form-group col-md-4">
+                            <label for="name">Nombre</label>
+                            <input type="text" class="form-control" id="name" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="lastname">Apellido</label>
+                            <input type="text" class="form-control" id="lastname" placeholder="Apellido" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="id">Cédula</label>
+                            <input type="number" class="form-control" id="id" placeholder="Cédula" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="age">Edad</label>
+                            <input type="number" class="form-control" id="age" placeholder="Edad" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="phone">Teléfono</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Teléfono" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="mobile">Celular</label>
+                            <input type="tel" class="form-control" id="mobile" placeholder="Celular" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="phoneWork">Teléfono de trabajo</label>
+                            <input type="tel" class="form-control" id="phoneWork" placeholder="Teléfono de trabajo"
+                                required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="city">City</label>
+                            <input type="text" class="form-control" id="city" placeholder="Santo Domingo" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="sector">Sector</label>
+                            <input type="text" class="form-control" id="sector" placeholder="..." required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="creditPurpose">Propósito del crédito</label>
+                            <input type="text" class="form-control" id="creditPurpose"
+                                placeholder="Compra de vehículo o motor" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="fuel">Tipo de vehículo:</label>
+                            <input type="text" class="form-control" id="fuel" placeholder="Gasolina" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="ageCar">Año de vehículo</label>
+                            <input type="number" class="form-control" id="ageCar" placeholder="2011" required>
+                        </div>
+                        <div class="form-group col-md-4">
+                            <label for="price">Precio de vehículo</label>
+                            <input type="number" class="form-control" id="price" placeholder="RD$" required>
+                        </div>
+
+                        <div class="form-group col-md-4">
+                            <label for="loan">Monto del préstamo</label>
+                            <input type="number" class="form-control" id="loan" placeholder="RD$" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="time">Tiempo Préstamo</label>
+                            <input type="text" class="form-control" id="time" placeholder="" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="payments">Cuota</label>
+                            <input type="text" class="form-control" id="payments" placeholder="" required>
+                        </div>
+                        <h4 class="mt-5 mb-5">Información laboral</h4>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="occupation">Ocupación</label>
+                            <input type="text" class="form-control" id="occupation" placeholder="" required>
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="bussiness">Actividad comercial o negocio</label>
+                            <input type="text" class="form-control" id="bussiness" placeholder="" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="sells">Ventas mensuales (RD$)</label>
+                            <input type="number" class="form-control" id="sells" placeholder="RD$" required>
+                        </div>
+
+                        <div class="form-group col-md-6">
+                            <label for="income">Ingresos</label>
+                            <input type="number" class="form-control" id="income" placeholder="RD$" required>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label for="address">Dirección</label>
+                            <input type="text" class="form-control" id="address" placeholder="" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Certificamos que los informaciones proporcionadas en esta solicitud son correctos y
+                                autorizamos expresa y formalmente a indagar y o suministrar a los centros de
+                                informaciones
+                                crediticio las referencias necesarias a los fines de evaluación del crédito,
+                                reconociendo y
+                                garantizando que la revelación de dichas informaciones por parte de y/o por sus
+                                respectivos
+                                empleados, funcionarios y accionistas conllevara violación de secreto profesional o los
+                                efectos del Articulo 377 del Código Penol ni generaran responsabilidad bolo los
+                                artículos
+                                1382 y siguientes del Código Civil, ni bajo ningún otro texto legal, al tiempo de
+                                renunciar
+                                expreso formalmente al ejercicio de cualesquiera acciones o demandas o los fines de lo
+                                reclamación de dolos y perjuicios por dicho causa o motivos, o por suministro do
+                                información
+                                inexacto y prometiendo lo sumisión de sus representantes, accionistas y demás
+                                causahabientes
+                                o lo pactado en este artículo en virtud de los disposiciones del Articulo 1120 del
+                                Código
+                                Civil. Asimismo entendemos y reconocemos que esto solicitud es propiedad exclusivo de
+                                Inversiones Gamarti SRL y por lo tanto uno vez completado no nos será devuelta.
+                            </label>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row align-items-baseline">
+                <div class="col-sm-12 col-md-4">
+                    <img src="img/logo-footer.png" alt="">
+                    <p class="text-white">Es una compañía dedicada a los servicios financieros, constituida conforme a
+                        las leyes Dominicanas.</p>
+                    <p class="rights">
+                        Created by: <a href="http://www.caribemedia.com.do/" target="_blank"> Caribe Media </a>&nbsp; |
+                        &nbsp;<a href="http://www.paginasamarillas.com.do/" target="_blank">Páginas amarillas</a></p>
+                </div>
+                <div class="col-sm-12 col-md-5">
+                    <h5>Contactos</h5>
+                    <ul>
+                        <li><span>DIRECCIÓN:</span></li>
+                        <li>Carretera Mella, Km 7 ½ Plaza Willmart, 2do Nivel Local 205, Santo Domingo Este, Rep. Dom.
+                        </li>
+                        <li><span>EMAIL:</span></li>
+                        <li><a href="mailto:inversionesgamartisrl@gmail.com">inversionesgamartisrl@gmail.com</a></li>
+                        <li><span>TELÉFONO:</span></li>
+                        <li><a href="tel:8297168213">8297168213</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-3">
+                    <h5>Navegación</h5>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="prestamos.html">Prestamos</a></li>
+                        <li><a href="calculadora.html">Calculadora</a></li>
+                        <li><a href="solicitud.html">Solicitud</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+
+            },
+            speed: 500,
+            autoplay: true
+        });
+    </script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.19.2/axios.js"
+        integrity="sha256-bd8XIKzrtyJ1O5Sh3Xp3GiuMIzWC42ZekvrMMD4GxRg=" crossorigin="anonymous"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdTfbcZAAAAAPvW83CmOtgq5p3EZ8C5EFzleOci"></script>
+
+    <script>
+        let contacto = document.getElementById("contact_us_submit");
+        let name = document.getElementById("name");
+        let lastname = document.getElementById("lastname");
+        let id = document.getElementById("id");
+        let age = document.getElementById("age");
+        let email = document.getElementById("email");
+        let phone = document.getElementById("phone");
+        let mobile = document.getElementById("mobile");
+        let phoneWork = document.getElementById("phoneWork");
+        let city = document.getElementById("city");
+        let sector = document.getElementById("sector");
+        let creditPurpose = document.getElementById("creditPurpose");
+        let fuel = document.getElementById("fuel");
+        let ageCar = document.getElementById("ageCar");
+        let price = document.getElementById("price");
+        let loan = document.getElementById("loan");
+        let time = document.getElementById("time");
+        let payments = document.getElementById("payments");
+        let occupation = document.getElementById("occupation");
+        let bussiness = document.getElementById("bussiness");
+        let sells = document.getElementById("sells");
+        let income = document.getElementById("income");
+        let address = document.getElementById("address");
+        let gridCheck = document.getElementById("gridCheck");
+        contacto.addEventListener("submit", function (e) {
+            e.preventDefault();
+            if(gridCheck.checked){
+                grecaptcha.ready(function () {
+                grecaptcha.execute('6LdTfbcZAAAAAPvW83CmOtgq5p3EZ8C5EFzleOci', {
+                    action: 'homepage'
+                }).then(function (token) {
+                    axios.post("https://func-mailer.azurewebsites.net/api/mailer", {
+                        captcha: token,
+                        Nombre: this.name.value,
+                        Apellido: this.lastname.value,
+                        Cédula: this.id.value,
+                        Edad: this.age.value,
+                        Email: this.email.value,
+                        Teléfono: this.phone.value,
+                        Celular: this.mobile.value,
+                        'Télefono de trabajo': this.phoneWork.value,
+                        Ciudad: this.city.value,
+                        Sector: this.sector.value,
+                        'Proposito del crédito': this.creditPurpose.value,
+                        'Tipo de vehículo': this.fuel.value,
+                        'Año del vehículo': this.ageCar.value,
+                        'Precio del vehículo': this.price.value,
+                        'Monto del Préstamo': this.loan.value,
+                        'Tiempo Préstamo': this.time.value,
+                        Cuota: this.payments.value,
+                        Ocapación: this.occupation.value,
+                        'Actividad comercial o negocio': this.bussiness.value,
+                        'Ventas mensuales (RD$)': this.sells.value,
+                        Ingresos: this.income.value,
+                        Dirección: this.address.value,
+                    }).then(resul => {
+                        resetForm();
+                        alert(
+                            'Gracias por contactarnos, contestaremos lo antes posible.'
+                        )
+                    })
+                });
+            });
+            }else{
+                alert('Debes marcar el check');
+            }
+            
+        });
+
+        function resetForm() {
+            name.value = '';
+            lastname.value = '';
+            id.value = '';
+            email.value = '';
+            phone.value = '';
+            mobile.value = '';
+            phoneWork.value = '';
+            city.value = '';
+            sector.value = '';
+            message.value = '';
+            fuel.value = '';
+            ageCar.value = '';
+            price.value = '';
+            loan.value = '';
+            time.value = '';
+            payments.value = '';
+            occupation.value = '';
+            bussiness.value = '';
+            sells.value = '';
+            income.value = '';
+            address.value = '';
+        }
+    </script>
+</body>
+
+</html>

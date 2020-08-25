@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*======= General styles ========= */
+.navbar-brand img {
+    width: 250px;
+}
+
+img {
+    width: 100%;
+}
+.btn:focus{
+    box-shadow: none;
+}
+ul{
+    margin: 0;
+    padding: 0;
+    li{
+        list-style: none;
+    }
+}
+.breadcrumb{
+    margin-bottom: 0;
+    
+}
+.breadcrumb a{
+    color: #000;
+}
+.padding-cero{
+    padding: 0;
+}
+button {
+    color: #ffffff;
+    background-color: #c49a6a;
+    padding: 10px 25px;
+    font-size: 13px;
+    line-height: 1.25;
+    border: 2px solid #c49a6a;
+    font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    border-radius: 35px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: center;
+    cursor: pointer;
+    vertical-align: middle;
+    user-select: none;
+}
+button a{
+    color: #ffffff !important;
+    text-decoration: none;
+
+}
+.swiper-pagination-bullet {
+    background: #fff;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+
+
+    /* ===== Header ==== */
+    header {
+        .swiper-container {
+            width: 100%;
+            height: 600px;
+
+            .swiper-slide {
+                position: relative;
+                background: #fff;
+                /* Center slide text vertically */
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                justify-content: center;
+                -webkit-box-align: center;
+                -ms-flex-align: center;
+                -webkit-align-items: center;
+                align-items: center;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .swiper-content {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    color: #fff;
+                    h3 {
+                        font-size: 40px;
+                    }
+
+                    p {
+                        font-size: 14px;
+                        line-height: 1.3;
+                    }
+                }
+            }
+
+            @media(min-width: 1200px) {
+                height: 800px;
+                transition: height 1s ease;
+            }
+        }
+    }
+
+    main {
+        background: url(../img/bg.jpg) no-repeat center center/cover;
+        padding-top: 100px;
+        padding-bottom: 100px;
+
+        h5 {
+            position: relative;
+            z-index: 1;
+            line-height: 1.3;
+            background: linear-gradient(to right, #f15421, #f15421);
+            -webkit-background-clip: text;
+            color: transparent;
+            display: inline-block;
+            position: relative;
+            font: 400 20px/1.2 "Abril Fatface", cursive;
+        }
+        .calculator{
+            .form-group{
+                display: flex;
+                justify-content: space-between;
+                label{
+                    flex-basis: 20%;
+                }
+                input{
+                    flex-basis: calc(80%-15px);
+                }
+            }
+        }
+    }
+   
+    footer{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        background-color: #303439;
+        color: #fff;
+
+        a{
+            color: #fff;
+        }
+        ul{
+            li{
+                margin: 20px 0px;
+                font-weight: 300;
+                span{
+                    font-weight: 600;
+                }
+                a{
+                    color: #fff !important;
+                }
+            }
+        }
+    }
+}
