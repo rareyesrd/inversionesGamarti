@@ -77,7 +77,18 @@ var app = new Vue({
       this.getTotalCuotas();
     },
     reset: function(){
-      document.getElementById('calculator').reset();
+      this.errors = [];
+      this.amount = null;
+      this.year = null;
+      this.cierre = null;
+      this.tasa = null;
+      this.interes = null;
+      this.totalInteres = null;
+      this.capitalInteres = null;
+      this.meses = null;
+      this.cuotas = null;
+      this.prestamo = null;
+      this.precio = null
     }
   },
 });
