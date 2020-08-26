@@ -12,6 +12,7 @@ var app = new Vue({
     meses: null,
     cuotas: null,
     prestamo: null,
+    precio: null
   },
   methods: {
     getTasa: function () {
@@ -75,5 +76,8 @@ var app = new Vue({
       this.getCapitalInteres();
       this.getTotalCuotas();
     },
+    reset: function(){
+      document.getElementById('calculator').reset();
+    }
   },
 });

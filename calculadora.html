@@ -88,7 +88,7 @@
                 <div class="row">
                     <div class="col-sm-12">
                         <p v-if="errors.length">
-                            <b>Please correct the following error(s):</b>
+                            <b>Por favor corrige los siguientes errores:</b>
                             <ul>
                                 <li v-for="error in errors">{{ error }}</li>
                             </ul>
@@ -102,41 +102,56 @@
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6">
-                            <div class="form-group">
-                                <label>Total del préstamo</label>
-                                <input type="number" class="form-control" v-model="prestamo"
-                                    aria-describedby="Monto del préstamo" disabled>
+                        <div class="form-group">
+                            <label>Valor del vehículo</label>
+                            <input type="number" class="form-control" v-model="precio">
                         </div>
                     </div>
+
                     <div class="col-sm-12 col-md-6">
                         <div class="form-group">
                             <label>Año de Vehículo</label>
-                            <input type="number" class="form-control" v-model="year" placeholder="2016">
+                            <input type="number" class="form-control" v-model="year" placeholder="( 2005 - 2020 )">
                         </div>
                     </div>
                     <div class="col-sm-12 col-md-6">
                         <div class="form-group">
-                            <label for="meses">Total de cuotas</label>
-                            <input type="number" class="form-control" v-model="cuotas" aria-describedby="Meses" disabled>
+                            <label>Modelo del vehículo</label>
+                            <input type="text" class="form-control">
                         </div>
                     </div>
+
+
                     <div class="col-sm-12 col-md-6">
                         <div class="form-group">
                             <label>Plazo a pagarlo</label>
-                            <input type="number" class="form-control" v-model="meses" placeholder="(meses)">
+                            <input type="number" class="form-control" v-model="meses" placeholder="( meses )">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                        <div class="form-group">
+                            <label>Total del préstamo</label>
+                            <input type="number" class="form-control" v-model="prestamo"
+                                aria-describedby="Monto del préstamo" disabled>
                         </div>
                     </div>
 
                     <div class="col-sm-12 col-md-6">
                         <div class="form-group">
-                            <label>Capital mas Interes</label>
-                            <input type="number" class="form-control" v-model="capitalInteres" disabled>
+                            <label for="meses">Total de cuotas</label>
+                            <input type="number" class="form-control" v-model="cuotas" aria-describedby="Meses"
+                                disabled>
                         </div>
                     </div>
                 </div>
-                <div class="">
-                    <button type="submit" class="btn btn-primary">Calcular</button>
 
+                <div class="buttons">
+                    <button class="btn btn-primary">Calcular</button>
+                    <button @click="reset" class="btn btn-primary">Borrar</button>
                 </div>
             </form>
         </div>

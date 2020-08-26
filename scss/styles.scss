@@ -8,26 +8,33 @@
 img {
     width: 100%;
 }
-.btn:focus{
+
+.btn:focus {
     box-shadow: none;
 }
-ul{
+
+ul {
     margin: 0;
     padding: 0;
-    li{
+
+    li {
         list-style: none;
     }
 }
-.breadcrumb{
+
+.breadcrumb {
     margin-bottom: 0;
-    
+
 }
-.breadcrumb a{
+
+.breadcrumb a {
     color: #000;
 }
-.padding-cero{
+
+.padding-cero {
     padding: 0;
 }
+
 button {
     color: #ffffff;
     background-color: #c49a6a;
@@ -47,11 +54,13 @@ button {
     vertical-align: middle;
     user-select: none;
 }
-button a{
+
+button a {
     color: #ffffff !important;
     text-decoration: none;
 
 }
+
 .swiper-pagination-bullet {
     background: #fff;
 }
@@ -97,6 +106,7 @@ body {
                     flex-direction: column;
                     justify-content: center;
                     color: #fff;
+
                     h3 {
                         font-size: 40px;
                     }
@@ -131,37 +141,41 @@ body {
             position: relative;
             font: 400 20px/1.2 "Abril Fatface", cursive;
         }
-        .calculator{
-            .form-group{
+
+        .calculator {
+            .form-group {
                 display: flex;
                 justify-content: space-between;
-                label{
+                label {
                     flex-basis: 20%;
                 }
-                input{
-                    flex-basis: calc(80%-15px);
+                input {
+                    flex-basis: calc(80% - 15px);
                 }
             }
         }
     }
-   
-    footer{
+
+    footer {
         padding-top: 50px;
         padding-bottom: 50px;
         background-color: #303439;
         color: #fff;
 
-        a{
+        a {
             color: #fff;
         }
-        ul{
-            li{
+
+        ul {
+            li {
                 margin: 20px 0px;
                 font-weight: 300;
-                span{
+
+                span {
                     font-weight: 600;
                 }
-                a{
+
+                a {
                     color: #fff !important;
                 }
             }
