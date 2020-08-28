@@ -113,10 +113,14 @@
                             <div class="card">
                                 <div class="card-header" id="headingOne" data-toggle="collapse"
                                     data-target="#collapseOne" aria-controls="collapseOne">
-                                    <h2 class="mb-0">
+                                    <h2 class="mb-0 d-flex justify-content-between">
                                         <button class="btn" type="button" aria-expanded="true">
                                             Misión
                                         </button>
+                                        <span class="spand">
+                                            <i class="fa fa-plus"></i>
+                                            <i class="fa fa-minus active"></i>
+                                        </span>
                                     </h2>
                                 </div>
 
@@ -128,14 +132,19 @@
                                         expectativas de cada cliente.
                                     </div>
                                 </div>
+
                             </div>
                             <div class="card">
                                 <div class="card-header" id="headingTwo" data-toggle="collapse"
                                     data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <h2 class="mb-0">
+                                    <h2 class="mb-0 d-flex justify-content-between">
                                         <button class="btn collapsed" type="button">
                                             Visión
                                         </button>
+                                        <span class="spand">
+                                            <i class="fa fa-plus active"></i>
+                                            <i class="fa fa-minus"></i>
+                                        </span>
                                     </h2>
                                 </div>
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
@@ -150,10 +159,14 @@
                             <div class="card">
                                 <div class="card-header" id="headingThree" data-toggle="collapse"
                                     data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <h2 class="mb-0">
+                                    <h2 class="mb-0 d-flex justify-content-between">
                                         <button class="btn collapsed" type="button">
                                             Valores
                                         </button>
+                                        <span class="spand">
+                                            <i class="fa fa-plus active"></i>
+                                            <i class="fa fa-minus"></i>
+                                        </span>
                                     </h2>
                                 </div>
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
@@ -186,12 +199,14 @@
                     <p class="text-white">Es una compañía dedicada a los servicios financieros, constituida conforme a
                         las leyes Dominicanas.</p>
                     <p class="rights">
-                        Created by: <a href="http://www.caribemedia.com.do/" target="_blank"> Caribe Media </a>&nbsp; | &nbsp;<a href="http://www.paginasamarillas.com.do/" target="_blank">Páginas amarillas</a></p>
+                        Created by: <a href="http://www.caribemedia.com.do/" target="_blank"> Caribe Media </a>&nbsp; |
+                        &nbsp;<a href="http://www.paginasamarillas.com.do/" target="_blank">Páginas amarillas</a></p>
                 </div>
                 <div class="col-sm-12 col-md-5">
                     <h5>Contactos</h5>
                     <ul>
-                        <li>Carretera Mella, Km 7 ½ Plaza Willmart, 2do Nivel Local 205, Santo Domingo Este, Rep. Dom.</li>
+                        <li>Carretera Mella, Km 7 ½ Plaza Willmart, 2do Nivel Local 205, Santo Domingo Este, Rep. Dom.
+                        </li>
                         <li><span>EMAIL:</span></li>
                         <li><a href="mailto:inversionesgamartisrl@gmail.com">inversionesgamartisrl@gmail.com</a></li>
                         <li><span>TELÉFONO:</span></li>
@@ -217,6 +232,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
     <script>
         var swiper = new Swiper('.swiper-container', {
             direction: 'vertical',
@@ -232,6 +248,7 @@
     <script>
         AOS.init();
     </script>
+
 </body>
 
 </html>
