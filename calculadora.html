@@ -149,10 +149,11 @@
                     </div>
                 </div>
 
-                <div class="row" v-if="show">
+                <div class="row" >
                     <div class="col-sm-12">
-                        <p>Los datos y resultados de esta simulación son informativos, aproximados y pueden variar. La cuota que está visualizando no incluye costo de traspaso, tasación, certificación de la DGII y policía. No incluye costo de seguro del vehículo y GPS, si incluye gastos legales						
-						</p>
+                        <p v-if="show">Los datos y resultados de esta simulación son informativos, aproximados y pueden variar. La cuota que está visualizando no incluye costo de traspaso, tasación, certificación de la DGII y policía. No incluye costo de seguro del vehículo y GPS, si incluye gastos legales						
+                        </p>
+                        <p><b>Incluye Gastos Legales</b></p>
                     </div>
                 </div>
                 <div class="buttons">
