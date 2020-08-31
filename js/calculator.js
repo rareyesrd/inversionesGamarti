@@ -12,28 +12,38 @@ var app = new Vue({
     meses: null,
     cuotas: null,
     prestamo: null,
-    precio: null
+    modelo: null,
+    precio: null,
+    active: false,
+    show: false,
   },
   methods: {
     getTasa: function () {
       let year = parseInt(this.year);
       switch (year) {
-        case 2007: case 2008: case 2009:
+        case 2007:
+        case 2008:
+        case 2009:
           this.tasa = 2.5;
           break;
-        case 2010: case 2011:
+        case 2010:
+        case 2011:
           this.tasa = 2.3;
           break;
         case 2012:
           this.tasa = 2.1;
           break;
-        case 2014: case 2015: case 2016:
+        case 2014:
+        case 2015:
+        case 2016:
           this.tasa = 1.9;
           break;
-        case 2017: case 2018:
+        case 2017:
+        case 2018:
           this.tasa = 1.8;
           break;
-        case 2019: case 2020:
+        case 2019:
+        case 2020:
           this.tasa = 1.5;
           break;
         default:
@@ -51,32 +61,48 @@ var app = new Vue({
       this.prestamo = parseInt(this.amount) + this.gastoCierre();
       return this.prestamo;
     },
-    getInteres: function(){
+    getInteres: function () {
       this.interes = this.prestamo * this.tasa;
       return this.interes;
     },
-    getTotalInteres: function(){
-      this.totalInteres = (this.interes * parseInt(this.meses));
+    getTotalInteres: function () {
+      this.totalInteres = this.interes * parseInt(this.meses);
       return this.totalInteres;
     },
-    getCapitalInteres: function(){
-      this.capitalInteres =  (this.totalInteres + this.prestamo);
+    getCapitalInteres: function () {
+      this.capitalInteres = this.totalInteres + this.prestamo;
       return this.capitalInteres;
     },
-    getTotalCuotas: function(){
+    getTotalCuotas: function () {
       this.cuotas = this.capitalInteres / parseInt(this.meses);
       this.cuotas = this.cuotas.toFixed(2);
       return this.cuotas;
     },
+
     submit: function () {
-      this.totalPrestamo();
-      this.getTasa();
-      this.getInteres();
-      this.getTotalInteres();
-      this.getCapitalInteres();
-      this.getTotalCuotas();
+      /* Validación =========
+      El prestamo debe de ser menor que el 50% del valor del vehiculo
+      */
+      if (this.prestamo < parseInt(this.precio * 0.5)) {
+        this.totalPrestamo();
+        this.getTasa();
+        this.getInteres();
+        this.getTotalInteres();
+        this.getCapitalInteres();
+        this.getTotalCuotas();
+        this.show = true;
+      } 
+      if  (this.prestamo > parseInt(this.precio * 0.5)) {
+        this.errors.push(
+          "El monto del prestamo no debe exceder el 50% del valor del vehículo."
+        );
+        this.active = true;
+        this.show = true;
+        this.cuotas = null;
+        this.prestamo = null;
+      }
     },
-    reset: function(){
+    reset: function () {
       this.errors = [];
       this.amount = null;
       this.year = null;
@@ -88,7 +114,10 @@ var app = new Vue({
       this.meses = null;
       this.cuotas = null;
       this.prestamo = null;
-      this.precio = null
-    }
+      this.modelo = null;
+      this.precio = null;
+      this.active = false;
+      this.show = false;
+    },
   },
 });
