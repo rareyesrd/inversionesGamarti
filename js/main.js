@@ -1,13 +1,3 @@
-// let spand = document.querySelectorAll(".card-header");
-// for (let el of spand) {
-//   el.addEventListener("click", () => {
-//     let toogleSign = el.querySelector(".spand").children;
-//     for (const index of toogleSign) {
-//       index.classList.toggle("active");
-//     }
-//   });
-// }
-
 Vue.component("zz-accordion", {
   props: ["contents"],
   data: function () {
@@ -74,11 +64,11 @@ var app = new Vue({
         title: "Visión",
         description:
           "Ser la opción preferida en soluciones financieras, convirtiendo las oportunidades en realidad, a través de un equipo calificado comprometido con las metas de nuestros clientes.",
+          active: false,
       },
       {
         title: "Valores",
-        description:
-          "Responsabilidad, Respeto, Integridad, Empatía, Innovación",
+        description: "Responsabilidad, Respeto, Integridad, Empatía, Innovación",
         active: false,
       },
     ],

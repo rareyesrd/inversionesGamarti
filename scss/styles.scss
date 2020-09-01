@@ -1,12 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /*======= General styles ========= */
-* {
-    transition: all 1s ease;
-}
 
 $base-color: #727272;
-$base-width: 320px;
+$base-width: 550px;
 $base-time: 200ms;
 
 $app-background-color: trasparent;
@@ -38,6 +35,38 @@ $accordion-caret-active-transform: rotate(135deg);
 
 $accordion-body-content-padding: 1rem;
 
+.btn-whatsapp {
+    background-color: #fff;
+    display: block;
+    width: 60px;
+    height: 60px;
+    color: #fff;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    border-radius: 50%;
+    line-height: 80px;
+    text-align: center;
+    z-index: 999;
+}
+
+.btn-whatsapp .fa-whatsapp {
+    font-size: 40px;
+    color: green;
+}
+
+.btn-whatsapp::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: #f00;
+    display: block;
+    position: absolute;
+    z-index: 1;
+    border-radius: 50%;
+    right: 4px;
+    top: 4px;
+}
 
 .navbar-brand img {
     width: 250px;
@@ -111,6 +140,11 @@ button {
     cursor: pointer;
     vertical-align: middle;
     user-select: none;
+    transition: all 1s ease;
+    &:hover{
+        background-color: #f15421;
+        border: 2px solid #f15421;
+    }
 }
 
 button a {
@@ -127,9 +161,37 @@ body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
 
+    /* ==== Nav ====== */
+    nav{
+        .nav-item{
+            .nav-link{
+            &:hover{
+                border-bottom: 3px solid #c49a6a;
+                transition: all .3s ease-in-out;
+            }
+        }
+        }
+    }
+   
 
     /* ===== Header ==== */
     header {
+        position: relative;
+        .text-header{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            h3{
+                color: #fff;
+                font-size: 50px;
+                text-shadow: 2px 2px 3px #303439;
+            }
+        }
         .swiper-container {
             width: 100%;
             height: 600px;

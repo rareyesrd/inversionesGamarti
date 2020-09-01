@@ -18,7 +18,15 @@
 
 <body>
 
+    <div class="btn-whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=18297168213" target="_blank">
+            <i class="fab fa-whatsapp fa-5x" aria-hidden="true"></i>
+        </a>
+    </div>
+
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+       
         <a class="navbar-brand" href="\"><img src="img/logo.png" alt=""></a>
         <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
             aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation"><span
@@ -42,6 +50,7 @@
                 </li>
             </ul>
         </div>
+    </div>
     </nav>
     <header>
         <div class="swiper-container">
@@ -109,79 +118,6 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-sm-12 col-md-6 mt-5 mb-3">
-                        <!-- <div class="accordion" id="accordionExample">
-                            <div class="card">
-                                <div class="card-header" id="headingOne" data-toggle="collapse"
-                                    data-target="#collapseOne" aria-controls="collapseOne">
-                                    <h2 class="mb-0 d-flex justify-content-between">
-                                        <button class="btn" type="button" aria-expanded="true">
-                                            Misión
-                                        </button>
-                                        <span class="spand">
-                                            <i class="fa fa-plus"></i>
-                                            <i class="fa fa-minus active"></i>
-                                        </span>
-                                    </h2>
-                                </div>
-
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Ofrecer soluciones financieras a tiempo, con la calidad humana, comodidad y la
-                                        rapidez que nos caracteriza, con la finalidad de satisfacer y llenar las
-                                        expectativas de cada cliente.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingTwo" data-toggle="collapse"
-                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    <h2 class="mb-0 d-flex justify-content-between">
-                                        <button class="btn collapsed" type="button">
-                                            Visión
-                                        </button>
-                                        <span class="spand">
-                                            <i class="fa fa-plus active"></i>
-                                            <i class="fa fa-minus"></i>
-                                        </span>
-                                    </h2>
-                                </div>
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        Ser la opción preferida en soluciones financieras, convirtiendo las
-                                        oportunidades en realidad, a través de un equipo calificado comprometido con las
-                                        metas de nuestros clientes.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-header" id="headingThree" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    <h2 class="mb-0 d-flex justify-content-between">
-                                        <button class="btn collapsed" type="button">
-                                            Valores
-                                        </button>
-                                        <span class="spand">
-                                            <i class="fa fa-plus active"></i>
-                                            <i class="fa fa-minus"></i>
-                                        </span>
-                                    </h2>
-                                </div>
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                                    data-parent="#accordionExample">
-                                    <div class="card-body">
-                                        <ul>
-                                            <li>• Responsabilidad </li>
-                                            <li>• Respeto </li>
-                                            <li>• Integridad </li>
-                                            <li>• Empatía </li>
-                                            <li>• Innovación </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
                         <div id="app">
                             <zz-accordion v-bind:contents.sync="contents"></zz-accordion>
                         </div>
