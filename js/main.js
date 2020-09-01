@@ -68,7 +68,7 @@ var app = new Vue({
       },
       {
         title: "Valores",
-        description: "Responsabilidad, Respeto, Integridad, Empatía, Innovación",
+        description: "Responsabilidad, Respeto, Integridad, Empatía y Innovación",
         active: false,
       },
     ],

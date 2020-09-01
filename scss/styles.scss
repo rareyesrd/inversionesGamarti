@@ -69,7 +69,7 @@ $accordion-body-content-padding: 1rem;
 }
 
 .navbar-brand img {
-    width: 250px;
+    width: 350px;
 }
 
 img {
@@ -166,10 +166,17 @@ body {
         .nav-item{
             .nav-link{
             &:hover{
-                border-bottom: 3px solid #c49a6a;
-                transition: all .3s ease-in-out;
+                border-bottom: 2px solid #f05525;
+                transition: all .1s ease;
             }
         }
+        }
+        .nav-item.active{
+            background-color: #c49a6a;
+            border-bottom: 2px solid #df4410;
+            .nav-link{
+                color: #fff !important;
+            }
         }
     }
    
